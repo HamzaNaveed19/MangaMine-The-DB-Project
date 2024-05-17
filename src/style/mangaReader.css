@@ -1,0 +1,49 @@
+/* mangaReader.css */
+#mangaViewer {
+    max-width: 100%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 20px; /* Adds space between the image and navigation buttons */
+}
+
+#mangaImage {
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+    max-width: 100%; /* Ensure it does not exceed the container width */
+    max-height: 80vh; /* Adjust the max-height to fit the viewport, considering other elements */
+    height: 500vh; /* Maintain aspect ratio */
+}
+
+#navigationButtons {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px; /* Add padding to the bottom for better spacing */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px; /* Adds space between buttons */
+    color: black;
+}
+
+#chapterPageInfo {
+    text-align: center; /* Ensures everything in this div is centered */
+    margin-top: 20px;
+    margin-bottom: 10px; /* Adds some space above and below */
+    font-size: 18px; /* General font size, adjusted for readability */
+}
+
+.page-info {
+    font-size: 20px; /* Increase font size for visibility */
+    background-color: #007BFF; /* Assuming this is your button color, adjust as needed */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners to match buttons */
+    display: inline-block; /* Inline block for better control */
+    margin: 5px; /* Space around the element */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: shadow to match buttons */
+}
+.manga-reader-container {
+    margin-top: 30px; /* Adjust the value as needed for your layout */
+}

@@ -1,0 +1,31 @@
+.manga-viewer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.manga-reader-container {
+  flex: 0 0 70%; /* flex-grow, flex-shrink, flex-basis */
+  padding: 20px;
+  overflow-y: auto; /* Adds scroll to the manga reader if content overflows */
+}
+
+.chapter-list-container {
+  flex: 0 0 30%; /* flex-grow, flex-shrink, flex-basis */
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  overflow-y: auto; /* Adds scroll to the chapter list if content overflows */
+}
+
+@media (max-width: 768px) {
+  .manga-viewer {
+    flex-direction: column;
+  }
+  .manga-reader-container,
+  .chapter-list-container {
+    flex-basis: 100%; /* Each container takes full width */
+    border-left: none; /* Removes left border for chapter list container */
+    border-top: 1px solid #ccc; /* Adds top border to chapter list for clarity */
+  }
+}

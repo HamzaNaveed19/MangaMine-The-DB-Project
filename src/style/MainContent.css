@@ -1,0 +1,32 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the container takes at least the height of the viewport */
+}
+
+.header-wrapper {
+    background-color: black;  /* Sets the background color to black */
+    color: white;  /* Sets text color to white for contrast */
+    padding: 20px;  /* Provides padding around the content */
+}
+
+.content-split {
+    display: flex;
+    flex: 1;  /* Allows this section to grow and fill available space */
+    padding: 20px 0;  /* Vertical padding */
+}
+
+.left-half, .right-half {
+    flex: 1;  /* Adjust as necessary to control width ratios */
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    margin-top: auto;  /* Pushes the footer to the bottom */
+}
+.Recommendations{
+    margin-left: 2%;
+    color:white;
+}

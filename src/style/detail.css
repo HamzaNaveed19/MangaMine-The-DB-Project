@@ -1,0 +1,267 @@
+.oiuytr {
+    display: flex;
+    padding: 20px;
+    background-color: #424242;
+    color: white;
+    margin-top: 80px;
+    background-color: #000000;
+    
+}
+/* Container for the image and button */
+.manga-imgCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align children horizontally */
+    width: 200px; /* Set a wider fixed width for the container */
+    margin: auto; /* Center the container if it's within a larger section */
+    margin-right: 2%;
+}
+
+/* Styling for the image */
+.manga-img {
+    width: 220px; /* Fixed width */
+    height: 320px; /* Fixed height */
+    object-fit: contain; /* Ensures the full image is visible, scales down if needed */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transformation on hover */
+    background: #FFF; /* Optional: Adds a white background to fill any empty space */
+}
+/* 
+.manga-img:hover {
+    transform: scale(1.04); Slightly enlarges the image on hover for a dynamic effect 
+}
+ */
+
+/* Button styling */
+.styles-module_btn_17GWO {
+    background-color: #0feffd4d;
+    border: 1.5px;
+    border-radius: 2em;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 1rem;
+    transition: all .3s ease;
+    width: 200px;
+}
+
+.styles-module_btn_17GWO:hover {
+    transform: scale(1.04); 
+    /*   background-color: rgb(15, 239, 253); 
+     color: rgb(0, 0, 0); */
+ }
+ 
+.cover-section {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cover-image {
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+.favorite-button {
+    background-color: rgba(15,239,253,.3); 
+    color: white;
+    border: 1.5px;
+    border-radius: 2em;
+    padding: 10rem 20rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.favorite-button:hover {
+   transform: scale(1.1); 
+   /*   background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0); */
+}
+
+
+
+
+
+
+.info-section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-section h1 {
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    margin: 5px 0;
+}
+
+.author-name {
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    transition: color 0.5s ease, opacity 2s ease; /* Smooth transition for color and opacity */
+    opacity: 0; /* Start with hidden text */
+    animation: fadeInText 2s ease forwards; /* Animation to fade in the text */
+}
+
+
+/* Keyframes for the text fade-in animation */
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hide the radio buttons visually but keep them functional */
+.hidden-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* General style for the labels that are now acting as clickable stars */
+  .star-label {
+    cursor: pointer;
+    font-size: 30px;  /* Set size of the stars */
+    color: #bdbaba; /* Default color of stars */
+    float: right; /* Align stars to the right */
+  }
+  
+  /* Hover effects before selection */
+  .rating:not(:checked) > .star-label:hover,
+  .rating:not(:checked) > .star-label:hover ~ .star-label {
+    color: #ff9e0b; /* Color when hovering over star */
+  }
+  
+  /* Hover effects after selection */
+  .rating > input:checked + .star-label:hover,
+  .rating > input:checked + .star-label:hover ~ .star-label,
+  .rating > input:checked ~ .star-label:hover,
+  .rating > input:checked ~ .star-label:hover ~ .star-label {
+    color: #e58e09; /* Color when hovering over selected stars */
+  }
+  
+  /* Style for checked stars */
+  .rating > input:checked ~ .star-label {
+    color: #ffa723; /* Color of selected stars */
+  }
+  
+  /* Set star character */
+  .star-label:before {
+    content: '★'; /* Unicode star character */
+  }
+  .title-container {
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds spacing around the text */
+    background-color: #010102; /* Light background for the text */
+    color: #333; /* Dark text color for contrast */
+}
+
+.manga-name {
+    font-size: 2.5rem; /* Larger font size for the manga name */
+    color: #c9ec00; /* A distinctive color for the manga title */
+    margin-bottom: 0.5em; /* Adds some space below the manga title */
+    animation: fadeInUp 1.5s ease-out forwards; /* Animation for the title */
+    /* text-align: left; */
+}
+
+.author-name {
+    font-size: 1.5rem; /* Smaller font size for the author's name */
+    color: #ffffff; /* Grey color for the author's name for subtlety */
+    animation: fadeInUp 2s ease-out forwards; /* Delayed animation for the author's name */
+    text-align: right;
+}
+
+/* Keyframes for fade-in-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start below the final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes gradient-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.TitleDetailHeader-module_overviewTitleWrapper_3_vMN {
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(120deg,rgba(15,239,253,.3),rgba(15,239,253));
+    background-size: 200% 200%;
+    animation: gradient-border 8s ease infinite;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.TitleDetailHeader-module_overviewTitleWrapper_3_vMN::before {
+    content: '';
+    position: absolute;
+    top: -2px; right: -2px; bottom: -2px; left: -2px;
+    background:linear-gradient(120deg,rgba(15,239,253,.3),rgba(15,239,253));
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: gradient-border 4s ease infinite;
+    filter: blur(8px);
+}
+
+.TitleDetailHeader-module_overviewTitle_1X9aO {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.TitleDetailHeader-module_overview_32fOi {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: justify;
+}
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre-tag {
+    padding: 8px 16px;
+    background-image:linear-gradient(90deg,rgba(15,239,253,.3),rgba(15,239,253));
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .genre-tag:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to right,rgba(15,239,253),rgba(15,239,253,.3));
+} */

@@ -1,0 +1,102 @@
+/* Basic body and container styling */
+body {
+    background-color: #1a1a1a; /* Dark grey/black background for high contrast */
+    font-family: 'Arial', sans-serif;
+    color: #f1f1f1; /* Light text for readability on dark background */
+  }
+  
+  .coomentpage {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333333; /* Darker shade for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Stronger shadow for depth */
+    border: 1px solid #444444; /* subtle border to define the container */
+  }
+  
+  /* Gradient border for the comment cards */
+  .cardforcomment {
+    background-color: #262626;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid transparent; /* Prepare space for the gradient border */
+    background-image: linear-gradient(333333, 333333), radial-gradient(circle at top left, #ffc107, #ffeb3b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-out; /* Smooth transform effect */
+  }
+  
+  /* .cardforcomment:hover {
+    transform: scale(1.03);  Slightly enlarge cards on hover
+  } */
+  
+  .cardforcomment-body {
+    padding: 15px;
+  }
+  
+  .cardforcomment-title {
+    font-size: 18px;
+    color: #ffc107; /* Yellow color for titles */
+    margin-bottom: 10px;
+  }
+  
+  .cardforcomment-text {
+    color: #f1f1f1; /* Light color text for readability */
+    line-height: 1.5;
+  }
+  
+  /* Enhance the list items and links */
+  .list-inline-item a {
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .list-inline-item a:hover {
+    color: #ffeb3b; /* Lighter yellow on hover */
+  }
+  
+  /* Styling the input field and button */
+  .commentform-control {
+    background-color: #333; /* Matching input background */
+    color: #fff; /* Light text color */
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .commentform-control:focus {
+    border-color: #ffc107; /* Focus color change */
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, .25); /* Matching glow effect */
+  }
+  
+  .btnforcomment {
+    width: 100%;
+    border-radius: 2em;
+
+    background-color: #ffc107;
+    color: #262626;
+    border: 1.5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btnforcomment:hover {
+    transform: scale(1.04);
+  }
+  
+  /* Responsive adjustments for better mobile experience */
+  @media (max-width: 768px) {
+    .coomentpage {
+      padding: 10px;
+    }
+  }
+  .input-comment{
+    width: 100%;
+    padding: 10px;
+  }
+  

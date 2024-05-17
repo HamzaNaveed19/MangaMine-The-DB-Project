@@ -1,0 +1,90 @@
+.logincontainer {
+    height: 600px;
+}
+
+
+.card {
+    width: 290px;
+    padding: 1.9rem 2.2rem;
+    text-align: center;
+    background: #363232;
+    margin-left: 40%;
+    margin-top:10%;
+    align-items: center;
+    font-family:  sans-serif;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: rgb(0, 0, 0); 
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1rem;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(15, 239, 253); 
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 2rem;
+    border: none;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: rgba(15,239,253,.3); 
+    color: rgb(15, 239, 253); 
+    transition: all .3s ease-in-out;
+
+    padding: 1rem 2rem; 
+    border-radius: 2rem;
+   }
+   
+   .btn-link {
+    color:rgba(15,239,253,.3); 
+    display: block;
+    font-size: .75em;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    transform: scale(1.1); 
+    background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0);
+   }
+   
+   .btn-link:hover {
+    color: rgb(15, 239, 253); 
+   }
+   

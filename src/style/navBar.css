@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in width/height calculations */
+    font-family: sans-serif;
+    color: #f2f5f7;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between and around content items */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: #333;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.logo {
+    padding: 1vh 1vw;
+}
+
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 10px; /* Adds horizontal padding */
+}
+
+.login-button, .join-button {
+    border: 1.5px;
+    border-radius: 2em;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(15,239,253,.3); 
+    color: rgb(15, 239, 253); 
+
+    
+    line-height: 1.5; 
+}
+
+.login-button:hover, .join-button:hover {
+    transform: scale(1.1); 
+    background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0);
+}
+
+.hamburger {
+    display: none;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 1.4rem 1rem; /* Increased vertical padding */
+    border: none;
+    border-radius: 20px;
+    border-color: white;
+    font-size: 16px;
+    color: black;
+}
+.search-button {
+    /* padding: 8px 16px;
+    font-size: 16px;
+    color: #131418;
+    background-color: #61DAFB;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; */
+
+    border: 1.5px;
+    border-radius: 2em;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(15,239,253,.3); 
+    color: rgb(15, 239, 253); 
+
+    
+    line-height: 1.5; 
+}
+
+.search-button:hover {
+    transform: scale(1.1); 
+    background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(-5%, -50%);
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #131418;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+}
+
+.menuSections ul {
+    list-style: none; /* Removes the default list styling */
+    display: flex; /* Aligns items in a row */
+    justify-content: space-around; /* Evenly spaces the list items */
+    padding: 0; /* Removes default padding */
+    margin: 0 20px; /* Adjusts horizontal margin for the whole list */
+    font-size: 1.2em; /* Increases font size for visibility */
+    font-weight: bold; /* Makes text bold */
+    text-transform: uppercase; /* Uppercase text for a uniform look */
+}
+
+.menuSections li {
+    margin: 0 15px; /* Adds horizontal margin to each list item */
+    transition: transform 1s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Indicates that the list items are clickable */
+}
+
+.menuSections li:hover {
+    /* Changes color on hover */
+    transform: scale(1.2); /* Scales up the item on hover */
+}
+
+/* Optional: Adding a subtle background animation on hover */
+.menuSections li:hover {
+    background-color:   rgba(15,239,253,.3);
+    color: white;
+    border-radius: 5px; /* Optional: adds rounded corners */
+    padding: .5px 4px; /* Optional: adds padding */
+}
+/* Navbar greeting animation and style */
+.greeting {
+    color: #ffffff; /* Golden color for the greeting */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.2rem; /* Larger font size */
+    transition: color 0.5s ease; /* Smooth color transition */
+    animation: slideIn 1s ease forwards; /* Slide-in animation */
+    opacity: 0; /* Start with the text being invisible */
+    transform: translateX(-20px); /* Start position of the text slide */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav-links li:hover .greeting {
+    color: #ffffff; /* Changes color to white when hovered */
+    text-shadow: 0 0 10px #00f8cf, 0 0 20px #00ffd5; /* Glowing effect on hover */
+}

@@ -1,0 +1,459 @@
+@import url("//fonts.googleapis.com/css2?family=Pathway+Extreme"); 
+@font-face { 
+  font-family:"Font Awesome 5 Free";
+  font-style:normal;
+  font-weight:400;
+  src:url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot);
+  src:url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+} 
+@font-face { 
+  font-family:"Font Awesome 5 Free";
+  font-style:normal;
+  font-weight:900;
+  src:url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot);
+  src:url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+} 
+  body {  
+    cursor:default;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:rgb(33, 37, 41);
+    text-align:left;
+    background:rgb(18, 19, 21);
+  }  
+* { 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin: 0; 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+    color: rgb(33, 37, 41); 
+    text-align: left; 
+    background-color: rgb(255, 255, 255);
+} 
+
+body { 
+    background: rgb(18, 19, 21); 
+    color: rgb(255, 255, 255); 
+    font-family: 'Pathway Extreme',sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    font-weight: 400; 
+    padding: 0; 
+    margin: 0; 
+    -webkit-text-size-adjust: none;
+} 
+
+html { 
+    font-family: sans-serif; 
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -ms-overflow-style: scrollbar; 
+    -webkit-tap-highlight-color: transparent;
+} 
+
+.slide-element { 
+    display: flex; 
+    align-items: center; 
+    padding: 0 120px;
+} 
+
+*,:after,:before { 
+    box-sizing: border-box;
+} 
+
+.slide-element > div  { 
+    transition: all .4s ease 0s; 
+    -webkit-transition: all .4s ease 0s; 
+    -moz-transition: all .4s ease 0s;
+} 
+
+.is-poster  { 
+    width: 20%; 
+    height: 450px; 
+    position: relative; 
+    z-index: 5; 
+    flex-shrink: 0; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,.3); 
+    overflow: hidden;
+} 
+
+.is-poster  { 
+    right: -100px; 
+    opacity: 0;
+} 
+
+.is-poster  { 
+    right: 0; 
+    opacity: 1;
+} 
+
+.is-caption  { 
+    position: relative; 
+    z-index: 3; 
+    color: rgb(255, 255, 255); 
+    flex-grow: 1; 
+    padding-left: 4rem;
+} 
+
+.is-caption  { 
+    left: -100px; 
+    opacity: 0;
+} 
+
+.is-caption  { 
+    left: 0; 
+    opacity: 1;
+} 
+
+a { 
+    color: rgb(255, 255, 255)fff; 
+    text-decoration: none; 
+    background-color: transparent; 
+    -webkit-text-decoration-skip: objects;
+} 
+
+a { 
+    color: rgb(255, 255, 255); 
+    cursor: pointer; 
+    text-decoration: none!important; 
+    outline: 0; 
+    -moz-outline: none;
+} 
+
+.is-poster .poster-mask  { 
+    opacity: 1; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 2; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+} 
+
+a:hover { 
+    color: rgb(0, 86, 179); 
+    text-decoration: underline;
+} 
+
+a:hover { 
+    color: rgb(15, 239, 253);
+} 
+
+img { 
+    vertical-align: middle; 
+    border-style: none;
+} 
+
+.is-poster img  { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+} 
+
+.film-info { 
+    display: flex; 
+    align-items: center;
+} 
+
+.film-info  { 
+    font-size: .85em; 
+    margin-bottom: 1rem;
+} 
+
+h2 { 
+    margin-top: 0; 
+    margin-bottom: .5rem;
+} 
+
+h2 { 
+    margin-bottom: .5rem; 
+    font-family: inherit; 
+    font-weight: 500; 
+    line-height: 1.2; 
+    color: inherit;
+} 
+
+h2 { 
+    font-size: 2rem;
+} 
+
+.heading-xl { 
+    font-size: 2.4em; 
+    font-weight: 700; 
+    line-height: 1.4; 
+    margin-bottom: 1rem;
+} 
+
+.sum-2 { 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+} 
+
+.sum-2 { 
+    -webkit-line-clamp: 2;
+} 
+
+.is-rate { 
+    display: flex; 
+    align-items: center;
+} 
+
+.is-caption .is-rate  { 
+    margin-bottom: 1.2rem;
+} 
+
+p { 
+    margin-top: 0; 
+    margin-bottom: 1rem;
+} 
+
+.description { 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+} 
+
+.description { 
+    -webkit-line-clamp: 3;
+} 
+
+.is-caption .description  { 
+    line-height: 1.7; 
+    font-weight: 300; 
+    margin-bottom: 2rem;
+} 
+
+.div-buttons-next { 
+    display: flex; 
+    align-items: center;
+    padding-left: 900px
+}
+
+.div-buttons-back { 
+    display: flex; 
+    align-items: center;
+    padding-left: 100px
+} 
+
+
+.poster-mask > div  { 
+    transition: all .2s ease 0s; 
+    -webkit-transition: all .2s ease 0s; 
+    -moz-transition: all .2s ease 0s;
+} 
+
+.slide-element .is-poster .poster-mask > div  { 
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    background-color: rgba(255,255,255,.1); 
+    backdrop-filter: blur(6px); 
+    -webkit-backdrop-filter: blur(6px); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 2em; 
+    color: rgb(255, 255, 255);
+} 
+
+.slide-element .is-poster .poster-mask:hover > div { 
+    background-color: rgba(255,255,255,.3);
+} 
+
+.film-info .item  { 
+    font-size: 12px; 
+    padding: .2rem .3rem; 
+    background-color: rgba(8,144,153,.4); 
+    border-radius: 3px; 
+    display: flex; 
+    align-items: center; 
+    line-height: 1; 
+    color: rgb(15, 239, 253);
+} 
+
+.film-info .item  { 
+    padding: .3rem .4rem; 
+    border-radius: .3rem; 
+    background-color: rgba(0,0,0,.2); 
+    color: rgb(15, 239, 253);
+} 
+
+.film-info .item + .item  { 
+    margin-left: .3rem;
+} 
+
+.mr-2 { 
+    margin-right: .5rem!important;
+} 
+
+.is-rate .stars  { 
+    position: relative; 
+    color: rgb(255, 255, 255); 
+    font-size: 16px; 
+    display: inline-block;
+} 
+
+.is-rate .stars::before { 
+    content: "\f005 \f005 \f005 \f005 \f005"; 
+    font-family: "Font Awesome 5 Free"; 
+    letter-spacing: 5px;
+} 
+
+.btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    text-align: center; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    border-radius: .25rem; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.btn { 
+    box-shadow: none!important; 
+    font-weight: 500;
+} 
+
+.btn { 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+} 
+
+.btn { 
+    font-size: 1em; 
+    padding: .4rem .8rem; 
+    line-height: 1.4; 
+    border-radius: .4rem;
+} 
+
+.btn-watch { 
+    background-color: rgba(15,239,253,.3); 
+    color: rgb(15, 239, 253); 
+    padding: 1rem 2rem; 
+    border-radius: 2rem;
+} 
+
+.btn-watch { 
+    transition: all .2s ease 0s; 
+    -webkit-transition: all .2s ease 0s; 
+    -moz-transition: all .2s ease 0s;
+} 
+
+.btn.w-icon { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+} 
+
+.btn:not(:disabled):not(.disabled) { 
+    cursor: pointer;
+} 
+
+.btn:hover { 
+    text-decoration: none;
+} 
+
+.btn-watch:hover { 
+    transform: scale(1.1); 
+    background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0);
+} 
+
+.fas { 
+    -moz-osx-font-smoothing: rgb(128, 128, 128)scale; 
+    -webkit-font-smoothing: antialiased; 
+    display: inline-block; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-rendering: auto; 
+    line-height: 1;
+} 
+
+.fas { 
+    font-family: "Font Awesome 5 Free";
+} 
+
+.fas { 
+    font-weight: 900;
+} 
+
+.slide-element .is-poster .poster-mask > div i  { 
+    position: relative; 
+    left: 4px; 
+    text-shadow: 0 0 10px rgba(0,0,0,.2);
+} 
+
+.fa-play:before { 
+    content: "\f04b";
+} 
+
+.fill.fill-3 { 
+    width: 60%;
+} 
+
+.is-rate .stars .fill  { 
+    position: absolute; 
+    left: 0; 
+    overflow: hidden; 
+    top: 50%; 
+    transform: translateY(-50%);
+} 
+
+.is-rate .stars .fill::before { 
+    content: "\f005 \f005 \f005 \f005 \f005"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    letter-spacing: 5px;
+} 
+
+.mr-3 { 
+    margin-right: 1rem!important;
+} 
+
+.btn.w-icon i  { 
+    font-size: .9em;
+} 
+.gallery-wrap{
+ margin-top: 100px;
+}
+
+.slider-container {
+  overflow-x: scroll;
+  display: flex;
+}
+
+/* Your existing card styles go here */
+.gallery {
+  width: 1400px;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  scroll-behavior: smooth;
+}

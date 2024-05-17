@@ -1,0 +1,102 @@
+/* wishlistInputPage.css */
+.wishcontainer{
+    padding-top: 80px;
+    text-align: center;
+    align-items: center;
+    height: 620px;
+}
+/* Centering the text field */
+input[type="text"] {
+    width: 300px; /* Adjust width as needed */
+    height: 30px;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Display as block element */
+  }
+  
+  /* Increase text size */
+  h1 {
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  /* Center the entire content */
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .button-on-submit { 
+    padding-top: 20px;
+    align-items: center;
+}
+
+
+.btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    text-align: center; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    border: 1px solid transparent; 
+    padding: .375rem .75rem; 
+    font-size: .1rem; 
+    line-height: 1.5; 
+    border-radius: .25rem; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.btn { 
+    box-shadow: none!important; 
+    font-weight: 500;
+} 
+
+.btn { 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+} 
+
+.btn { 
+    font-size: 0.8em; 
+    padding: .4rem .8rem; 
+    line-height: 1.4; 
+    border-radius: .4rem;
+} 
+
+.btn-watch { 
+    background-color: rgba(15,239,253,.3); 
+    color: rgb(15, 239, 253); 
+    border-radius: 2rem;
+} 
+
+.btn-watch { 
+    transition: all .2s ease 0s; 
+    -webkit-transition: all .2s ease 0s; 
+    -moz-transition: all .2s ease 0s;
+} 
+
+.btn.w-sub { 
+    align-items: center; 
+    justify-content: center;
+} 
+
+.btn:not(:disabled):not(.disabled) { 
+    cursor: pointer;
+} 
+
+.btn:hover { 
+    text-decoration: none;
+} 
+
+.btn-watch:hover { 
+    transform: scale(1.1); 
+    background-color: rgb(15, 239, 253); 
+    color: rgb(0, 0, 0);
+} 
