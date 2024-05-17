@@ -19,5 +19,7 @@ This project addresses a critical need for more accessible manga reading resourc
 
 Contribute to this project by just:
 Downloading the zip file 
-importing the database named "mangaSQL.bacpac" file in your ssms or any other sql server.
-changing the connection string in server.js in build as well as public folder.
+
+Importing the database named "mangaSQL.bacpac" file in your ssms or any other sql server.
+
+Changing the connection string in server.js in build as well as public folder.
